@@ -1,0 +1,5 @@
+bazel-bazel_travis_toolbox
+bazel-bin
+bazel-genfiles
+bazel-out
+bazel-testlogs
