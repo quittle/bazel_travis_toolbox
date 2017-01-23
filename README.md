@@ -10,7 +10,7 @@ Travis is a great tool for automatically building and testing changes to project
 
 1. Add this as a submodule
 ```bash
-    git submodule add https://github.com/quittle/bazel_travis_toolbox
+git submodule add https://github.com/quittle/bazel_travis_toolbox
 ```
 2. Create the `.travis.yml` file in the root of the repository
 3. Add the following to `.travis.yml`
