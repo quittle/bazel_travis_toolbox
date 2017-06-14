@@ -2,6 +2,8 @@ env:
     - BAZEL_VERSION='0.4.3'
     - BAZEL_VERSION='0.4.4'
     - BAZEL_VERSION='0.4.5'
+    - BAZEL_VERSION='0.5.0'
+    - BAZEL_VERSION='0.5.1'
 
 dist: trusty
 
@@ -11,5 +13,5 @@ before_install:
     - ./before_install.sh
 
 script:
-    - ./bazel_build.sh
-    - ./bazel_build_and_test.sh
+    - bazel build //...
+    - bazel test //...

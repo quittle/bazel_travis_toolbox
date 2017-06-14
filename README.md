@@ -18,7 +18,7 @@ git submodule add https://github.com/quittle/bazel_travis_toolbox
 env:
     # Environment variables are where input to the travis toolbox goes. Add the version of Bazel
     # required for the project.
-    - BAZEL_VERSION='0.4.3'
+    - BAZEL_VERSION='0.5.1'
 
 dist: trusty # Bazel requires a version of LIBSTDC that's not available in precise
 
@@ -29,10 +29,8 @@ before_install:
     - ./bazel_travis_toolbox/before_install.sh
 
 script:
-    # Performs `bazel build //...` with neccessary flags set. Use this script if the repository does
-    # not have any tests.
-    - ./bazel_travis_toolbox/bazel_build.sh
-    # Performs `bazel build //... && bazel test //...` with necessary flags set. Use this script if
-    # the repository does have tests. No need to use `bazel_build.sh` if using this script.
-    - ./bazel_travis_toolbox/bazel_build_and_test.sh
+    # Builds all targets
+    - bazel build //...
+    # Runs all tests
+    - bazel test //...
 ```
