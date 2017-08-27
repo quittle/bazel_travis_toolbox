@@ -14,13 +14,13 @@ BAZEL_PUBLIC_KEY="${RELATIVE_ROOT}/bazel-release.pub.gpg"
 
 # Apt repositories needed
 APT_REPOSITORIES=(
-    ppa:openjdk-r/ppa
-    ppa:ubuntu-toolchain-r/test
+    ppa:webupd8team/java
 )
 
 # Package list from http://bazel.io/docs/install.html
 BAZEL_APT_DEPS=(
-    openjdk-8-jdk
+    oracle-java8-installer
+    oracle-java8-set-default
     pkg-config
     unzip
     zip
@@ -79,14 +79,6 @@ echo 'Installing dependencies.'
 sudo apt-get install -y ${SCRIPT_APT_DEPS[@]} ${BAZEL_APT_DEPS[@]}
 
 echo 'All packages installed.'
-
-echo 'Updating java alternatives.'
-
-# Set java to be the installed Open JDK 8 package just installed
-openjdk_8=$(update-java-alternatives --list | grep '1\.8.*-openjdk' | cut -d' ' -f1)
-sudo update-java-alternatives --set "${openjdk_8}"
-
-echo 'Correct java version set.'
 
 echo 'Downloading Bazel installer and signature files.'
 

@@ -4,6 +4,9 @@ env:
     - BAZEL_VERSION='0.4.5'
     - BAZEL_VERSION='0.5.0'
     - BAZEL_VERSION='0.5.1'
+    - BAZEL_VERSION='0.5.2'
+    - BAZEL_VERSION='0.5.3'
+    - BAZEL_VERSION='0.5.4'
 
 dist: trusty
 
