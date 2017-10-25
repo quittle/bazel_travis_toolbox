@@ -9,6 +9,7 @@ env:
     - BAZEL_VERSION='0.5.4'
     - BAZEL_VERSION='0.6.0'
     - BAZEL_VERSION='0.6.1'
+    - BAZEL_VERSION='0.7.0'
 
 sudo: required
 
