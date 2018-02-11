@@ -19,9 +19,11 @@ APT_REPOSITORIES=(
 
 # Package list from http://bazel.io/docs/install.html
 BAZEL_APT_DEPS=(
+    g++
     oracle-java8-installer
     oracle-java8-set-default
     pkg-config
+    python
     unzip
     zip
     zlib1g-dev
