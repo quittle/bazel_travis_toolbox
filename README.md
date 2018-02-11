@@ -1,4 +1,4 @@
-# Welcome to the Bazel Travis Toolbox ![Travis CI Build Status](https://travis-ci.org/quittle/bazel_travis_toolbox.svg?branch=master)
+# Welcome to the Bazel Travis Toolbox [![Travis CI Build Status](https://travis-ci.org/quittle/bazel_travis_toolbox.svg?branch=master)](https://travis-ci.org/quittle/bazel_travis_toolbox)
 
 The goal of this repository is to make it as simple as possible to add [Travis CI](https://travis-ci.org) build support for Bazel projects on Travis.
 
