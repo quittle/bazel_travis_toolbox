@@ -18,7 +18,7 @@ git submodule add https://github.com/quittle/bazel_travis_toolbox
 env:
     # Environment variables are where input to the travis toolbox goes. Add the version of Bazel
     # required for the project.
-    - BAZEL_VERSION='0.10.0'
+    - BAZEL_VERSION='0.13.0'
 
 sudo: required # Required to allow this package to handle installing required packages.
 
@@ -28,7 +28,7 @@ before_install:
 
 script:
     # Builds all targets
-    - bazel build //...
+    - bazel build ...
     # Runs all tests
-    - bazel test //...
+    - bazel test ...
 ```

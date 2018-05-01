@@ -11,6 +11,7 @@ env:
     - BAZEL_VERSION='0.6.1'
     - BAZEL_VERSION='0.7.0'
     - BAZEL_VERSION='0.10.0'
+    - BAZEL_VERSION='0.13.0'
 
 sudo: required
 
