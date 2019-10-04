@@ -14,14 +14,13 @@ BAZEL_PUBLIC_KEY="${RELATIVE_ROOT}/bazel-release.pub.gpg"
 
 # Apt repositories needed
 APT_REPOSITORIES=(
-    ppa:webupd8team/java
+    # Currently none
 )
 
 # Package list from http://bazel.io/docs/install.html
 BAZEL_APT_DEPS=(
     g++
-    oracle-java8-installer
-    oracle-java8-set-default
+    openjdk-8-jdk
     pkg-config
     python
     unzip
