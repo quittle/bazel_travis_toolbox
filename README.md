@@ -1,6 +1,6 @@
-# Welcome to the Bazel Travis Toolbox [![Travis CI Build Status](https://travis-ci.org/quittle/bazel_travis_toolbox.svg?branch=master)](https://travis-ci.org/quittle/bazel_travis_toolbox)
+# Welcome to the Bazel Travis Toolbox [![Travis CI Build Status](https://travis-ci.com/quittle/bazel_travis_toolbox.svg?branch=master)](https://travis-ci.com/quittle/bazel_travis_toolbox)
 
-The goal of this repository is to make it as simple as possible to add [Travis CI](https://travis-ci.org) build support for Bazel projects on Travis.
+The goal of this repository is to make it as simple as possible to add [Travis CI](https://travis-ci.com) build support for Bazel projects on Travis.
 
 ## Why use this?
 
@@ -18,7 +18,7 @@ git submodule add https://github.com/quittle/bazel_travis_toolbox
 env:
     # Environment variables are where input to the travis toolbox goes. Add the version of Bazel
     # required for the project.
-    - BAZEL_VERSION='0.13.0'
+    - BAZEL_VERSION='0.29.1'
 
 sudo: required # Required to allow this package to handle installing required packages.
 
